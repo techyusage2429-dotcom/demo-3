@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Image Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Wiki Image Finder</h1>
+      <p class="subtitle">Search Wikipedia and extract related images.</p>
+
+      <form id="search-form" class="search-row">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Try: Mars rover, pandas, Eiffel Tower"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite"></p>
+      <section id="results" class="grid" aria-label="Search results"></section>
+    </main>
+
+    <template id="card-template">
+      <article class="card">
+        <a class="card-link" target="_blank" rel="noopener noreferrer">
+          <img class="card-image" alt="" loading="lazy" />
+          <div class="card-content">
+            <h2 class="card-title"></h2>
+            <p class="card-extract"></p>
+          </div>
+        </a>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
