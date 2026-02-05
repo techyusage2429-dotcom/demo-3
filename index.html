@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wiki Image Finder</title>
+    <title>Product 3D Image Finder</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Wiki Image Finder</h1>
-      <p class="subtitle">Search Wikipedia and extract related images.</p>
+      <h1>Product 3D Image Finder</h1>
+      <p class="subtitle">Ask for a product and get curated, best-match 3D images from the internet.</p>
 
       <form id="search-form" class="search-row">
         <input
           id="search-input"
           type="text"
-          placeholder="Try: Mars rover, pandas, Eiffel Tower"
+          placeholder="Try: iPhone, gaming chair, coffee machine"
           autocomplete="off"
           required
         />
-        <button type="submit">Search</button>
+        <button type="submit">Find 3D Images</button>
       </form>
 
       <p id="status" class="status" aria-live="polite"></p>
-      <section id="results" class="grid" aria-label="Search results"></section>
+      <section id="results" class="grid" aria-label="3D image search results"></section>
     </main>
 
     <template id="card-template">
